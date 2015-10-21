@@ -1,0 +1,29 @@
+class Match
+{
+  int ID;
+  1 -- 2 Team;
+}
+
+class Team
+{
+    name;
+}
+
+class Player
+{
+  int ID;
+  int Position;
+  * -- 1 Team;
+  1 -- * Shots;
+}
+
+class Infractions
+{
+  Enum Type;
+  * -- 1 Player;
+}
+
+class Shots
+{
+  Enum Type;
+}
